@@ -1,0 +1,22 @@
+# Copy to pdm.config.yaml (gitignored) or run: python scripts/setup.py init
+
+user:
+  name: Jane Doe
+  role: Product Manager
+  aliases: [Jane]            # names that identify your action items in meeting notes
+
+vault:
+  path: ./vault              # relative to this file, ~ allowed, or an absolute path
+
+active_product: Acme         # must match a product folder in the vault
+
+# Optional: remove this block if you do not use Jira
+tracker:
+  type: jira
+  url: https://jira.example.com
+  username: jdoe
+  projects: [ABC]
+
+# Optional: extra terms the leak check (scripts/check_clean.py) blocks from commits
+leak_check:
+  deny: []

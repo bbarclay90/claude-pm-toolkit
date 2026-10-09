@@ -1,0 +1,33 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+.pytest_cache/
+
+# Data files (may contain sensitive information)
+data/*.xlsx
+data/*.xls
+data/*.csv
+
+# Generated output
+docs/output/
+
+# Local config and personal files
+pdm.config.yaml
+context/about-me.md
+.mcp.json
+.claude/settings.local.json
+.claude/commands/local/
+scripts/local/
+
+# Default in-repo vault location
+vault/
+
+# Scheduled run logs
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
